@@ -1,5 +1,10 @@
+@font-face {
+  font-family: NotoSansJP;
+  src: url(NotoSansJP-DemiLight.otf);
+  }
+
 body{
-  font-family:Verdana,Arial;
+  font-family:NotoSansJP,Verdana,Arial;
   font-size:14px;
   }
 
