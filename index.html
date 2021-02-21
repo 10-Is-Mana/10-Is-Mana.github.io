@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <base target="_top">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="utils.js"></script>
   <title>Mana ASHIDA's Website</title>
 </head>
 <body>
+  <ul class="navbar">
+    <li><a class="tab active" href="#home">Home</a></li>
+    <li><a class="tab" href="#edu">Education</a></li>
+    <li><a class="tab" href="#pub">Publication</a></li>
+    <li><a class="tab" href="#resources">Resources</a></li>
+    <li><a class="tab" href="#blog">Blog</a></li>
+  </ul>
+  <div class="contents">
   <section id="header">
     <h1>蘆田真奈/Mana ASHIDA</h1>
   </section><!-- #header -->
+
   <section id="contents">
-    <h2>経歴/Education</h2>
+    <h2 id="edu">経歴/Education</h2>
     
     <ul class="products">
       <li>
@@ -30,7 +40,7 @@
       </li>
     </ul>
     
-    <h2>業績/Publication</h2>
+    <h2 id="pub">業績/Publication</h2>
     <ul class="products">
       <li>
         蘆田真奈、平澤寅庄、金子正弘、小町守 日本語BERTによる否定要素認識についての分析　言語処理学会第27回年次大会(NLP2021)　発表予定
@@ -42,7 +52,7 @@
       </li>
     </ul>
     
-    <h2>Activities</h2>
+    <h2 id="resources">Resources</h2>
     <ul>
       <li>
         COVID-19 Myth Busters in World Languages 
@@ -53,7 +63,7 @@
       <li>
         Drenjongke YouTube Channel
         [<a href="https://www.youtube.com/channel/UC90NszbLUgoOw7ZLEUHJ3WA">YouTube channel</a>]
-        [<a href="http://id.nii.ac.jp/1130/00004759/">Bulletin Paper</a>
+        [<a href="http://id.nii.ac.jp/1130/00004759/">Bulletin Paper</a>]
       </li>
     </ul>
 
@@ -67,9 +77,11 @@
     Python, R, Praat<p>
     </ul>
     
-    <h2>Blog</h2>
+    <h2 id="blog">Blog</h2>
     <ul>
         <li><a href="hello.html">Hello, thank you for visiting my website!</a></li>
     </ul>
-    
+    </section>
+  </div>
 </body>
+</html>

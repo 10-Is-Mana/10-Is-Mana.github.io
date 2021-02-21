@@ -8,6 +8,39 @@ body{
   font-size:14px;
   }
 
+.contents{
+  margin-left: 20%;
+  padding: 1px 16px;
+}
+
+.navbar{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #ccc;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar li a.active{
+  background-color: darkslategray;
+  color: #ccc;
+}
+
+.navbar li a:hover:not(.active){
+  background-color: darkslategray;
+  color: #ccc;
+}
+
 #header{
   margin-bottom:15px;
   border-bottom: 1px solid #ccc;
@@ -40,4 +73,4 @@ h3{
 
 p{
   margin-bottom:14px;
-  }
+}
