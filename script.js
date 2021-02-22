@@ -10,3 +10,4 @@ function clickTab(e){
 for (i = 0; i < tabs.length; i++){
     tabs[i].addEventListener('click', clickTab)
 }
+
