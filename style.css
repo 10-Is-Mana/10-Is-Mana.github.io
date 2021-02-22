@@ -18,7 +18,7 @@ body{
   margin: 0;
   padding: 0;
   width: 13%;
-  background-color: #ccc;
+  background-color: #cccccc;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -32,25 +32,25 @@ body{
 }
 
 .navbar li a.active{
-  background-color: darkslategray;
-  color: #ccc;
+  background-color: #336666;
+  color: #cccccc;
 }
 
 .navbar li a:hover:not(.active){
-  background-color: darkslategray;
-  color: #ccc;
+  background-color: #336666;
+  color: #cccccc;
 }
 
 #header{
   margin-bottom:15px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cccccc;
   }
 
 #footer{
   font-size:12px;
-  color:#ccc;
+  color:#cccccc;
   text-align:center;
-  border-top:1px solid #ccc;
+  border-top:1px solid #cccccc;
   padding:10px 0 20px;
   }
 
@@ -60,13 +60,13 @@ h2,h3{
 
 h2{
   font-size:16px;
-  border-left:5px solid #ccc;
+  border-left:5px solid #cccccc;
   padding:3px 0 3px 10px;
   margin-bottom:10px;
   }
 
 h3{
-  border-bottom:1px solid #ccc;
+  border-bottom:1px solid #cccccc;
   padding:3px 0;
   margin-bottom:10px;
   }
