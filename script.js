@@ -13,5 +13,5 @@ for (i = 0; i < tabs.length; i++){
 }
 
 if(hash){
-    document.getElementsByClassName(hash).classList.add('active');
+    document.getElementsByClassName(hash)[0].classList.add('active');
 }
