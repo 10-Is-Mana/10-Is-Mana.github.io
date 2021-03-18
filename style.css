@@ -2,11 +2,12 @@
   font-family: "NotoSansJP";
   src:  url("NotoSansCJKjp-DemiLight.woff2") format('woff2');
   font-display: swap;
-  }
+}
 
 body{
   font-family: "NotoSansJP",Verdana,Arial;
   font-size:14px;
+  text-size-adjust: none;
   }
 
 .contents{
