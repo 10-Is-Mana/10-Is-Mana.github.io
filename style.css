@@ -4,11 +4,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "uf935";
-  src:  url("uf935.ttf") format('ttf');
-}
-
 body{
   font-family: "NotoSansJP",Verdana,Arial;
   font-size:14px;
