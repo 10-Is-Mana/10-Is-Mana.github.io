@@ -4,15 +4,30 @@
   font-display: swap;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body{
   font-family: "NotoSansJP",Verdana,Arial;
   font-size:14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   text-size-adjust: none;
-  }
+}
 
 .contents{
   margin-left: 13%;
   padding: 1px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .navbar{
@@ -22,8 +37,9 @@ body{
   width: 13%;
   background-color: #cccccc;
   position: fixed;
-  height: 100%;
+  height: calc(100% - 16px);
   overflow: auto;
+  border-radius: 5px;
 }
 
 .navbar li a {
@@ -49,11 +65,11 @@ body{
   }
 
 #footer{
+  position: fixed;
+  bottom: 0;
+  left: calc(6.5% - 45px);
   font-size:12px;
-  color:#cccccc;
-  text-align:center;
-  border-top:1px solid #cccccc;
-  padding:10px 0 20px;
+  padding:5px 0 10px;
   }
 
 h2,h3{
@@ -74,5 +90,89 @@ h3{
   }
 
 p{
+  position: relative;
   margin-bottom:14px;
+  height: 50%;
+}
+
+hr{
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card div button{
+  position: relative;
+  height: 40px;
+  width: 100px;
+  margin-top: 90px;
+  margin-right: 20px;
+  background-color: #cccccc;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.card div button:hover:not(.active){
+  border-style: solid;
+}
+
+.card div{
+  position: absolute;
+  bottom: 0;
+	width: 100%;
+	height: 140px;
+  text-align: right;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 80%);
+}
+
+.card {
+  animation: fadeIn 1.0s ease 0s 1 forwards;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 47%;
+  height: 200px;
+  overflow: hidden;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 10px;
+  /* font-size: 20px; */
+}
+
+.card-hidden {
+  display: none;
+}
+
+.expanded-card {
+  animation: fadeIn 1.0s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+.expanded-card div{
+  height: 40px;
+  text-align: right;
+}
+
+.expanded-card div button{
+  position: relative;
+  height: 40px;
+  width: 80px;
+  /* margin-top: 90px; */
+  /* margin-right: 10px; */
+  background-color: #cccccc;
+  /* color: #cccccc; */
+  border-radius: 5px;
+  border-style: none;
+}
+
+.expanded-card div button:hover:not(.active){
+  border-style: solid;
+}
+
+.wrapper{
+  height: 200px;
+  margin-bottom: 30px;
 }

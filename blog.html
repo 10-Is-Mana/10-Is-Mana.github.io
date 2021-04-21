@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preload" as="font" href="NotoSansCJKjp-DemiLight.woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Mana ASHIDA's Website</title>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a class="tab home" href="index.html">Home</a></li>
+      <li><a class="tab edu" href="index.html#edu">Education</a></li>
+      <li><a class="tab pub" href="index.html#pub">Publication</a></li>
+      <li><a class="tab resources" href="index.html#resources">Resources</a></li>
+      <li><a class="tab active" onclick="window.location.reload()">Blog</a></li>
+    </ul>
+    <div class="contents">
+      <section id="header">
+        <h1>Blog</h1>
+      </section><!-- #header -->
+      <section id="contents" class="wrapper">
+        <div class="card" style="float: left;" id="page1">
+          <h2>Hello!</h2>
+          <p>
+            Hi, this is Mana. I am a 2nd-year master's student in the Faculty of Systems Design at Tokyo Metropolitan University, advised by Mamoru Komachi. 
+            Before coming to TMU, I received a Bachelor of Arts (Linguistics major) at International Christian University. 
+            To put it in a nutshell, I study how language models behave. 
+            My interests are in the language, how a human acquires it, or a machine, say, a neural network learns something out of it. 
+            I am also engaging in the fairness of Artificial Intelligence by examining the potential adversarial consequences of AI usage against disadvantaged groups.
+          </p>
+          <div><button onclick="expandCard('page1');">Read more</button></div>
+        </div>
+        <div class="card" style="float: right;" id="page2">
+          <h2>SIGTYP Newsletter, April 2021</h2>
+          <p>I am glad to be invited to contribute to <a href="https://sigtyp.github.io/sigtyp-newsletter-Apr-2021.html">the SIGTYP April 2021 Newsletter</a>. 
+            SIGTYP is one of the special interest groups in the ACL community, which focuses on Language Typology. 
+            The work we introduced is about Drenjongke, the language spoken in Sikkim, India. 
+            Before this work, our group was working mainly on the Drenjongke sound. The recordings collected during the past fieldwork can be downloaded upon request from the <a href="https://phophono.aa-ken.jp/drenjongke.php">website</a>. 
+            Some audio files, namely nursery rhymes, are uploaded on YouTube along with their lyrics and English translation. 
+            We are now working on developing a post-correction model of the OCR for Drenjongke. Stay tuned!
+          </p>
+          <div><button onclick="expandCard('page2');">Read more</button></div>
+        </div>
+      </section>
+      <section id="footer">
+        &copy; 10-Is-Mana, 2021
+      </section>
+    </div>
+  <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
