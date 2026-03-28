@@ -1,0 +1,7 @@
+name: mana-site
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - flask=3.0.3
+  - markdown=3.6

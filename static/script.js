@@ -13,6 +13,9 @@ for (i = 0; i < tabs.length; i++){
 }
 
 if(hash){
+    for (j = 0; j < tabs.length; j++){
+        tabs[j].classList.remove('active')
+    }
     document.getElementsByClassName(hash)[0].classList.add('active');
 }
 
