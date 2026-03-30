@@ -93,41 +93,6 @@ a:hover {
   color: var(--muted);
 }
 
-.social-links {
-  display: flex;
-  gap: 10px;
-  margin-top: 16px;
-}
-
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--accent-strong);
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.social-link:hover {
-  transform: translateY(-1px);
-  background: var(--accent);
-  color: #ffffff;
-  border-color: var(--accent);
-}
-
-.social-link i {
-  width: 18px;
-  height: 18px;
-  font-size: 18px;
-  line-height: 1;
-  fill: currentColor;
-}
-
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -160,6 +125,10 @@ a:hover {
   margin-top: 26px;
 }
 
+.page-wide {
+  max-width: 1320px;
+}
+
 .section {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -181,6 +150,52 @@ a:hover {
   font-family: "Special Elite", "LINE Seed JP", "Noto Sans JP";
   margin: 16px 0 8px;
   font-size: 1rem;
+  color: var(--accent-strong);
+}
+
+.section-copy {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+  font-family: "Special Elite", "LINE Seed JP", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.button-link-secondary {
+  background: transparent;
+  color: var(--accent-strong);
+  border-color: var(--border);
+}
+
+.button-link-secondary:hover {
+  background: rgba(36, 107, 115, 0.08);
+  border-color: var(--accent);
   color: var(--accent-strong);
 }
 
@@ -225,10 +240,87 @@ a:hover {
   color: var(--muted);
 }
 
+.item-points {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  color: var(--muted);
+}
+
+.item-points li {
+  padding: 2px 0;
+  border-bottom: none;
+}
+
+.upcoming-item {
+  position: relative;
+  padding: 14px 16px 16px;
+  border: 1px solid rgba(36, 107, 115, 0.22);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(36, 107, 115, 0.08), rgba(255, 255, 255, 0.96));
+}
+
+.upcoming-item::before {
+  content: "COMING SOON";
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #ffffff;
+  font-family: "Special Elite", "LINE Seed JP", "Noto Sans JP";
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
+}
+
+.cv-page-body {
+  min-height: 100vh;
+}
+
+.cv-section {
+  padding: 18px;
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.cv-note {
+  margin: 0;
+  color: var(--muted);
+}
+
+.cv-embed-shell {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 4px);
+  overflow: hidden;
+  background: #dfe8ef;
+}
+
+.cv-embed {
+  display: block;
+  width: 100%;
+  height: min(78vh, 1100px);
+  background: #ffffff;
+}
+
+.cv-fallback {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.cv-fallback h2 {
+  margin-top: 0;
 }
 
 .blog-list {
@@ -256,6 +348,37 @@ a:hover {
 .blog-item p {
   margin: 0 0 10px;
   color: var(--muted);
+}
+
+.site-footer {
+  margin-top: 28px;
+  padding: 16px 0 8px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .page {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+
+  .site-header {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .nav {
+    justify-content: flex-start;
+  }
+
+  .cv-actions {
+    align-items: flex-start;
+  }
+
+  .cv-embed {
+    height: 72vh;
+  }
 }
 
 .card {

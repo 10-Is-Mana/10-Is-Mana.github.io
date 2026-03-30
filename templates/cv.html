@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Mana ASHIDA</title>
+</head>
+<body class="cv-page-body">
+  <div class="page page-wide">
+    <header class="site-header">
+      <div class="brand">
+        <h1 class="site-title">Curriculum Vitae</h1>
+      </div>
+      <nav class="nav">
+        <a class="tab home" href="{{ url_for('index') }}">Home</a>
+        <a class="tab cv active" href="{{ url_for('cv') }}">CV</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="section cv-section">
+        <div class="cv-actions">
+          <a class="button-link" href="{{ url_for('static', filename='data/cv.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+        </div>
+        <div class="cv-embed-shell">
+          <object
+            class="cv-embed"
+            data="{{ url_for('static', filename='data/cv.pdf') }}"
+            type="application/pdf"
+          >
+            <div class="cv-fallback">
+              <h2>CV preview unavailable</h2>
+              <p>The embedded PDF could not be displayed here.</p>
+              <p><a href="{{ url_for('static', filename='data/cv.pdf') }}" target="_blank" rel="noopener noreferrer">Open the PDF in a new tab</a></p>
+            </div>
+          </object>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      &copy; 10-Is-Mana, 2026
+    </footer>
+  </div>
+</body>
+</html>
