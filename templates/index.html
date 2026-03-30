@@ -3,6 +3,7 @@
 <head>
   <base target="_top">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mana ASHIDA's Website</title>
 </head>
@@ -15,6 +16,11 @@
         <p class="site-summary">
           I study how humans and AI interpret and communicate meaning across language and context, and how to design AI systems that make users feel understood — put simply, alignment.
         </p>
+        <div class="social-links" aria-label="Social links">
+          <a class="social-link" href="https://www.linkedin.com/in/mana-ashida" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
       <nav class="nav">
         <a class="tab home active" href="{{ url_for('index') }}">Home</a>
@@ -37,7 +43,7 @@
           <li>
             <div class="item-meta">2020.04 ~ 2022.03</div>
             <div class="item-title">Tokyo Metropolitan University, Master of Computer Science</div>
-            <div class="item-sub">東京都立大学大学院 システムデザイン研究科 情報科学域 自然言語処理研究室（小町研）</div>
+            <div class="item-sub">東京都立大学 システムデザイン研究科 情報科学域 自然言語処理研究室（小町研）</div>
           </li>
           <li>
             <div class="item-meta">2016.04 ~ 2020.03</div>
@@ -84,7 +90,7 @@
           <li>
             <div class="item-meta">2019.09 ~ 2020.10</div>
             <div class="item-title">International Christian University, Research Assistant</div>
-            <div class="item-sub">リサーチ・アシスタント</div>
+            <div class="item-sub">国際基督教大学, リサーチ・アシスタント</div>
           </li>
         </ul>
       </section>
@@ -202,8 +208,6 @@
     </footer>
   </div>
 
-  <div id="wcb" class="carbonbadge"></div>
   <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
-  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 </body>
 </html>
