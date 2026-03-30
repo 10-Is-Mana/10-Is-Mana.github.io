@@ -93,6 +93,52 @@ a:hover {
   color: var(--muted);
 }
 
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #0a66c2;
+  box-shadow: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-1px);
+}
+
+.linkedin-link:any-link,
+.linkedin-link:any-link:hover,
+.linkedin-link:any-link:visited,
+.linkedin-link:any-link:active {
+  color: #0a66c2;
+}
+
+.github-link:any-link,
+.github-link:any-link:hover,
+.github-link:any-link:visited,
+.github-link:any-link:active {
+  color: #181717;
+}
+
+.social-link i {
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+  line-height: 1;
+  fill: currentColor;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -290,14 +336,13 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   margin-bottom: 18px;
 }
 
-.cv-note {
-  margin: 0;
-  color: var(--muted);
+.cv-nav {
+  justify-content: flex-start;
 }
 
 .cv-embed-shell {

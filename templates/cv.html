@@ -15,14 +15,15 @@
       </div>
       <nav class="nav">
         <a class="tab home" href="{{ url_for('index') }}">Home</a>
-        <a class="tab cv active" href="{{ url_for('cv') }}">CV</a>
       </nav>
     </header>
 
     <main class="content">
       <section class="section cv-section">
         <div class="cv-actions">
-          <a class="button-link" href="{{ url_for('static', filename='data/cv.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          <nav class="nav cv-nav" aria-label="CV actions">
+            <a class="tab cv-file" href="{{ url_for('static', filename='data/cv.pdf') }}" target="_blank" rel="noopener noreferrer">Open PDF</a>
+          </nav>
         </div>
         <div class="cv-embed-shell">
           <object
