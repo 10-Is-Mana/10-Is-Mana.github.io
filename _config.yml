@@ -1,9 +1,0 @@
-theme: jekyll-theme-minimal
-exclude:
-  - app.py
-  - environment.yml
-  - requirements.txt
-  - posts
-  - templates
-  - .vscode
-  - .DS_Store
